@@ -1,0 +1,115 @@
+extends layout
+
+block content
+
+  -
+    var news = [
+      {
+        img: 'news-1',
+        name: 'Производители молочных продуктов все активнее экспортируют свои товары'
+      },
+      {
+        img: 'news-2',
+        name: '22 декабря 2017 года в городе Нягани состоится Круглый стол на тему «Приоритеты...'
+      },
+      {
+        img: 'news-3',
+        name: 'Производители молочных продуктов все активнее экспортируют свои товары'
+      },
+      {
+        img: 'news-2',
+        name: '22 декабря 2017 года в городе Нягани состоится Круглый стол на тему «Приоритеты...'
+      },
+      {
+        img: 'news-3',
+        name: 'Производители молочных продуктов все активнее экспортируют свои товары'
+      }
+    ]
+
+    var projects = [
+      'Сделано в Югре!',
+      'Образовательный проект РЭЦ',
+      'Запросы от иностранных компаний',
+      'Экспортный бюллетень'
+    ]
+
+  main.main
+    include includes/left
+    .right
+      .swiper-container.main-slider.js-main-slider
+        .swiper-wrapper
+          each item in [1, 2, 3, 4]
+            .swiper-slide(style="background-image: url('images/main-slide.jpg')")
+              a(href="#")
+                img(src="images/main-slide-logo.png").swiper-slide__logo
+                h1.h1 Получи товарный знак<br>«Сделано в Югре!»
+                h3.h3 Стань частью регионального бренда!
+        .swiper-pagination
+        .swiper-button-next
+        .swiper-button-prev
+      .wrapper
+        .line
+          h1.h1 Новости
+        .news-block
+          .news
+            each item in news
+              a(style='background-image: url(\'images/' + item.img + '.png\')',
+              href="#").news__item
+                .news__item-wrap
+                  .news__item-date 04.12.2017
+                  .news__item-name= item.name
+            form(action="#").news__item.subs
+              .subs-desc Подпишитесь на нашу новостную рассылку
+              input(type="text", placeholder="Ваш E-mail").subs__input
+              hr
+              button.button.full Подписаться на новости
+          a(href="#").button.full.white Все новости
+        .line
+          h1.h1 Проекты
+        .projects-block
+          .swiper-container.projects.js-projects
+            .swiper-wrapper
+              each count in [1, 2]
+                each item, index in projects
+                  a(href="#").swiper-slide.projects-item
+                    .projects-item__img
+                      img(src='images/project-' + (index + 1) + '.png')
+                    .projects-item__name= item
+        form(action="#").form.with-head
+          .form-head.
+            Опрос предпринимателей Ханты-Мансийского автономного округа —
+            Югры с целью выявления потребностей участия в бизнес-миссии в
+            Арабскую Республику Египет
+          .form-foot
+            .form-flex.mar-bot
+              .form-control
+                label(for="input-1").form-control__label Наименование компании
+                input(type="text", id="input-1", placeholder="Ваша компания").form-control__input
+              .form-control
+                label(for="input-2").form-control__label Сфера деятельности компании
+                input(type="text", id="input-2", placeholder="Напишите Вашу сферу деятельности").form-control__input
+              .form-control
+                label(for="input-3").form-control__label Контактные данные
+                input(type="text", id="input-3", placeholder="Ваш E-mail или телефон").form-control__input
+            .form-flex
+              .form-control
+                span.
+                  Заинтересована ли Ваша компания в участии в бизнес-миссии в Арабскую Республику Египет?
+                span
+                  input(type="radio", id="radio-1", name="radio", checked).form-control__radio
+                  label(for="radio-1").form-control__radio-label Да
+                  input(type="radio", id="radio-2", name="radio").form-control__radio
+                  label(for="radio-2").form-control__radio-label Нет
+              button.button Отправить
+        .line
+          h1.h1 Партнеры
+          .partners-controls
+            .swiper-button-prev.js-partners-prev
+            .swiper-button-next.js-partners-next
+        .swiper-container.partners.js-partners
+          .swiper-wrapper
+            each count in [1, 2]
+              each item in [1, 2, 3, 4, 5, 6]
+                a(href="#").swiper-slide.partners__item
+                  img(src='images/partner-' + item + '.png')
+  include includes/footer

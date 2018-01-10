@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('hinted-CenturyGothic-Bold.eot');
+    src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url('hinted-CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('hinted-CenturyGothic-Bold.woff2') format('woff2'),
+        url('hinted-CenturyGothic-Bold.woff') format('woff'),
+        url('hinted-CenturyGothic-Bold.ttf') format('truetype'),
+        url('hinted-CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('hinted-CenturyGothic.eot');
+    src: local('Century Gothic'), local('CenturyGothic'),
+        url('hinted-CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-CenturyGothic.woff2') format('woff2'),
+        url('hinted-CenturyGothic.woff') format('woff'),
+        url('hinted-CenturyGothic.ttf') format('truetype'),
+        url('hinted-CenturyGothic.svg#CenturyGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('hinted-CenturyGothic-BoldItalic.eot');
+    src: local('Century Gothic Bold Italic'), local('CenturyGothic-BoldItalic'),
+        url('hinted-CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-CenturyGothic-BoldItalic.woff2') format('woff2'),
+        url('hinted-CenturyGothic-BoldItalic.woff') format('woff'),
+        url('hinted-CenturyGothic-BoldItalic.ttf') format('truetype'),
+        url('hinted-CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('hinted-CenturyGothic-Italic.eot');
+    src: local('Century Gothic Italic'), local('CenturyGothic-Italic'),
+        url('hinted-CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-CenturyGothic-Italic.woff2') format('woff2'),
+        url('hinted-CenturyGothic-Italic.woff') format('woff'),
+        url('hinted-CenturyGothic-Italic.ttf') format('truetype'),
+        url('hinted-CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
