@@ -131,13 +131,13 @@
     {
       const hideButtonText = 'Свернуть'
       const showClass = 'show'
-      const duration = 300
+      const duration = 200
       $('.js-hidden').on('click', (e) => {
         const $this = $(e.currentTarget)
         const $hiddenBlock = $this.parent().find('.hidden-block')
         const $text = $this.find('span')
         const isShow = $this.hasClass(showClass)
-        $this.stop().animate({ opacity: 0 }, duration, () => {
+        $this.animate({ opacity: 0 }, duration, () => {
           if (isShow) {
             $text.text(
               $hiddenBlock.find('b').text()
@@ -147,8 +147,15 @@
           }
           $this.toggleClass(showClass, !isShow)
           $hiddenBlock.slideToggle(duration)
-          setTimeout(() => { $this.stop().animate({ opacity: 1 }, duration) }, 200)
+          setTimeout(() => { $this.animate({ opacity: 1 }, duration) }, 200)
         })
+      })
+    }
+
+    // lang
+    {
+      $('.js-lang').on('click', (e) => {
+        $(e.currentTarget).toggleClass('show')
       })
     }
 

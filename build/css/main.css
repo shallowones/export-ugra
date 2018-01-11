@@ -860,8 +860,9 @@ button:hover {
 }
 .lang:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
-.lang:hover > ul {
+.lang.show > ul {
   visibility: visible;
   opacity: 1;
   z-index: auto;
