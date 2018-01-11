@@ -147,7 +147,7 @@
           }
           $this.toggleClass(showClass, !isShow)
           $hiddenBlock.slideToggle(duration)
-          setTimeout(() => { $this.animate({ opacity: 1 }, duration) }, 200)
+          setTimeout(() => { $this.animate({ opacity: 1 }, duration) }, duration)
         })
       })
     }

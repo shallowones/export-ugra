@@ -552,6 +552,19 @@ button:hover {
 .wrapper-min {
   width: 818px;
 }
+@media (max-width: 1599px) {
+  .wrapper-min {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1599px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
 .h1,
 .h2,
 .h3,
@@ -564,9 +577,15 @@ button:hover {
   line-height: 3rem;
   margin-bottom: 2.5rem;
 }
+@media (max-width: 1599px) {
+  .h1 {
+    margin-bottom: 2rem;
+  }
+}
 .h2 {
   font-size: 1.875rem;
   line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 .h3 {
   font-size: 1.25rem;
@@ -616,6 +635,12 @@ button:hover {
           align-items: center;
   padding: 0 39px 0 25px;
 }
+@media (max-width: 1599px) {
+  .header-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .header__logo {
   display: block;
   width: 152px;
@@ -630,6 +655,11 @@ button:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 1599px) {
+  .header-desc {
+    width: 150px;
+  }
+}
 .header__iso {
   display: block;
   width: 57px;
@@ -643,6 +673,13 @@ button:hover {
   margin-right: 10px;
   font-size: 14px;
   line-height: 1rem;
+}
+@media (max-width: 1599px) {
+  .header-social > span {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
 }
 .header-social__item {
   display: inline-block;
@@ -671,6 +708,11 @@ button:hover {
   background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Layer_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22enable-background%3Anew%200%200%20512%20512%3B%22%20xml%3Aspace%3D%22preserve%22%20width%3D%22512px%22%20height%3D%22512px%22%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M373.659%2C0H138.341C62.06%2C0%2C0%2C62.06%2C0%2C138.341v235.318C0%2C449.94%2C62.06%2C512%2C138.341%2C512h235.318%20%20%20%20C449.94%2C512%2C512%2C449.94%2C512%2C373.659V138.341C512%2C62.06%2C449.94%2C0%2C373.659%2C0z%20M470.636%2C373.659%20%20%20%20c0%2C53.473-43.503%2C96.977-96.977%2C96.977H138.341c-53.473%2C0-96.977-43.503-96.977-96.977V138.341%20%20%20%20c0-53.473%2C43.503-96.977%2C96.977-96.977h235.318c53.473%2C0%2C96.977%2C43.503%2C96.977%2C96.977V373.659z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M370.586%2C238.141c-3.64-24.547-14.839-46.795-32.386-64.342c-17.547-17.546-39.795-28.746-64.341-32.385%20%20%20%20c-11.176-1.657-22.507-1.657-33.682%2C0c-30.336%2C4.499-57.103%2C20.541-75.372%2C45.172c-18.269%2C24.631-25.854%2C54.903-21.355%2C85.237%20%20%20%20c4.499%2C30.335%2C20.541%2C57.102%2C45.172%2C75.372c19.996%2C14.831%2C43.706%2C22.619%2C68.153%2C22.619c5.667%2C0%2C11.375-0.418%2C17.083-1.265%20%20%20%20c30.336-4.499%2C57.103-20.541%2C75.372-45.172C367.5%2C298.747%2C375.085%2C268.476%2C370.586%2C238.141z%20M267.791%2C327.632%20%20%20%20c-19.405%2C2.882-38.77-1.973-54.527-13.66c-15.757-11.687-26.019-28.811-28.896-48.216c-2.878-19.405%2C1.973-38.77%2C13.66-54.527%20%20%20%20c11.688-15.757%2C28.811-26.019%2C48.217-28.897c3.574-0.53%2C7.173-0.795%2C10.772-0.795s7.199%2C0.265%2C10.773%2C0.796%20%20%20%20c32.231%2C4.779%2C57.098%2C29.645%2C61.878%2C61.877C335.608%2C284.268%2C307.851%2C321.692%2C267.791%2C327.632z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20d%3D%22M400.049%2C111.951c-3.852-3.851-9.183-6.058-14.625-6.058c-5.442%2C0-10.773%2C2.206-14.625%2C6.058%20%20%20%20c-3.851%2C3.852-6.058%2C9.174-6.058%2C14.625c0%2C5.451%2C2.207%2C10.773%2C6.058%2C14.625c3.852%2C3.851%2C9.183%2C6.058%2C14.625%2C6.058%20%20%20%20c5.442%2C0%2C10.773-2.206%2C14.625-6.058c3.851-3.852%2C6.058-9.183%2C6.058-14.625C406.107%2C121.133%2C403.9%2C115.802%2C400.049%2C111.951z%22%20fill%3D%22%23FFFFFF%22%2F%3E%0A%09%3C%2Fg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3Cg%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
   background-size: 14px;
 }
+@media (max-width: 1599px) {
+  .header-social {
+    text-align: center;
+  }
+}
 .header-search {
   height: 3rem;
   position: relative;
@@ -689,6 +731,11 @@ button:hover {
 .header-search__input:active {
   border-color: #00abec;
   background-color: #fff;
+}
+@media (max-width: 1599px) {
+  .header-search__input {
+    width: 30vw;
+  }
 }
 .header-search__button {
   width: 50px;
@@ -757,6 +804,12 @@ button:hover {
   list-style-type: none;
   margin: 0;
   padding: 2.875rem 0;
+}
+@media (max-width: 1599px) {
+  .menu ul {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 .menu li {
   display: block;
@@ -955,6 +1008,11 @@ button:hover {
 .swiper-container.main-slider .swiper-pagination-bullet:last-child {
   margin-bottom: 0;
 }
+@media (max-width: 1599px) {
+  .swiper-container.main-slider {
+    height: 30rem;
+  }
+}
 .line {
   position: relative;
   margin-bottom: 3rem;
@@ -976,6 +1034,11 @@ button:hover {
   height: 1px;
   background-color: #e5e0d3;
 }
+@media (max-width: 1599px) {
+  .line {
+    margin-bottom: 2rem;
+  }
+}
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,6 +1051,11 @@ button:hover {
 }
 .news-block {
   margin-bottom: 5rem;
+}
+@media (max-width: 1599px) {
+  .news-block {
+    margin-bottom: 2rem;
+  }
 }
 .news__item {
   display: inline-block;
@@ -1021,6 +1089,19 @@ button:hover {
 }
 .news__item:hover .news__item-name {
   text-decoration: underline;
+}
+@media (max-width: 1599px) {
+  .news__item {
+    margin-right: 10px;
+    max-width: calc(50% - 10px);
+  }
+}
+@media (max-width: 1599px) {
+  .news {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .subs {
   background: #295b8e url('../images/subs.png') no-repeat 90% -87px;
@@ -1092,6 +1173,12 @@ button:hover {
   padding-bottom: 3.5rem;
   margin-bottom: 3.5rem;
   border-bottom: 1px solid #dfdfdf;
+}
+@media (max-width: 1599px) {
+  .projects-block {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 .projects-item {
   display: block;
@@ -1388,6 +1475,11 @@ button:hover {
 .partners-block {
   margin-top: 5rem;
 }
+@media (max-width: 1599px) {
+  .partners-block {
+    margin-top: 2rem;
+  }
+}
 .gray {
   color: #a7a7a7;
 }
@@ -1408,20 +1500,36 @@ button:hover {
   padding: 2.75rem 2.375rem;
   font-size: 12px;
 }
+@media (max-width: 1599px) {
+  .footer-wrap {
+    padding: 2rem;
+  }
+}
 .footer-left {
   max-width: 36rem;
 }
 .footer-left > p {
   margin: 0 0 .5rem;
 }
+@media (max-width: 1599px) {
+  .footer-left {
+    max-width: initial;
+    width: 45%;
+    padding-right: 2rem;
+  }
+}
 .footer-middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 30px;
+  min-width: 5rem;
 }
 .footer-middle__delimiter {
   width: 1px;
@@ -1431,11 +1539,33 @@ button:hover {
   margin: 0 2.75rem;
   background-color: #393e51;
 }
+@media (max-width: 1599px) {
+  .footer-middle__delimiter {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 .footer-middle .header-social__item:first-child {
   margin-left: 0;
 }
+@media (max-width: 1599px) {
+  .footer-middle {
+    width: 20%;
+  }
+}
 .footer-right > p {
   margin: 0;
+}
+@media (max-width: 1599px) {
+  .footer-right > p {
+    text-align: right;
+  }
+}
+@media (max-width: 1599px) {
+  .footer-right {
+    width: 35%;
+    padding-left: 2rem;
+  }
 }
 .footer-sub {
   padding: 50px 0;
@@ -1460,10 +1590,20 @@ button:hover {
   width: 23.125rem;
   margin-left: 2rem;
 }
+@media (max-width: 1599px) {
+  .footer-sub .form-control__input {
+    margin-left: 1rem;
+  }
+}
 .footer-sub .form-control__label {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 0;
+}
+@media (max-width: 1599px) {
+  .footer-sub .form-control {
+    margin-right: 2rem;
+  }
 }
 .footer-sub .button {
   white-space: nowrap;
@@ -1483,6 +1623,11 @@ button:hover {
   background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C!--%20Generator%3A%20Adobe%20Illustrator%2021.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20196.1%2059.4%22%20style%3D%22enable-background%3Anew%200%200%20196.1%2059.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0D%0A%09.st0%7Bfill%3A%23FFFFFF%3B%7D%0D%0A%3C%2Fstyle%3E%0D%0A%3Ctitle%3Elogo%3C%2Ftitle%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M0%2C6.4V5.4L8.7%2C0l1.1%2C1.7L3%2C5.8l6.8%2C4l-1.1%2C1.7L0%2C6.4z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M25.6%2C12.2c-0.6%2C0-1.2-0.1-1.8-0.3c-0.5-0.2-0.9-0.6-1.2-1c-0.3-0.5-0.5-1-0.6-1.5c-0.2-0.7-0.3-1.3-0.3-2h-1%0D%0A%09v4.5h-2.8V0.6h2.7v4.2h1c0.1-0.7%2C0.2-1.3%2C0.4-1.9c0.1-0.5%2C0.4-1%2C0.7-1.4c0.3-0.4%2C0.8-0.7%2C1.2-0.9c0.5-0.2%2C1.1-0.3%2C1.7-0.3%0D%0A%09c0.7%2C0%2C1.4%2C0.1%2C2%2C0.4c0.5%2C0.3%2C0.9%2C0.7%2C1.1%2C1.2c0.3%2C0.6%2C0.5%2C1.2%2C0.6%2C1.9c0.1%2C0.8%2C0.2%2C1.6%2C0.2%2C2.4c0%2C0.8-0.1%2C1.7-0.2%2C2.5%0D%0A%09c-0.1%2C0.7-0.3%2C1.3-0.7%2C1.9c-0.3%2C0.5-0.7%2C0.9-1.3%2C1.2C26.9%2C12.1%2C26.3%2C12.2%2C25.6%2C12.2z%20M24.2%2C6.3c0%2C0.9%2C0.1%2C1.7%2C0.3%2C2.6%0D%0A%09c0.1%2C0.5%2C0.6%2C0.9%2C1.1%2C0.9c0.5%2C0%2C0.9-0.3%2C1-0.8c0.2-0.9%2C0.3-1.8%2C0.3-2.7c0-0.9-0.1-1.7-0.3-2.6c-0.1-0.5-0.5-0.9-1.1-0.8%0D%0A%09c-0.5%2C0-0.9%2C0.3-1%2C0.8C24.3%2C4.5%2C24.2%2C5.4%2C24.2%2C6.3z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M31.2%2C9.4h1.5V3.1h-1.5V0.6H42v4.5h-2.5v-2h-3.8v6.3h3.8v2.5h-8.3C31.2%2C11.9%2C31.2%2C9.4%2C31.2%2C9.4z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M43.7%2C6.3c0-0.9%2C0.1-1.7%2C0.4-2.5c0.5-1.4%2C1.7-2.5%2C3.1-3c0.8-0.3%2C1.6-0.4%2C2.4-0.4c0.9%2C0%2C1.7%2C0.1%2C2.5%2C0.4%0D%0A%09C52.9%2C1%2C53.5%2C1.5%2C54.1%2C2c0.5%2C0.5%2C0.9%2C1.2%2C1.2%2C1.9c0.3%2C0.8%2C0.4%2C1.6%2C0.4%2C2.4c0%2C0.9-0.1%2C1.7-0.4%2C2.5c-0.5%2C1.4-1.7%2C2.5-3.1%2C3%0D%0A%09c-0.8%2C0.3-1.6%2C0.4-2.4%2C0.4c-0.9%2C0-1.7-0.1-2.5-0.4c-0.7-0.3-1.3-0.7-1.9-1.2c-0.5-0.5-0.9-1.2-1.2-1.9C43.8%2C7.9%2C43.7%2C7.1%2C43.7%2C6.3z%0D%0A%09%20M46.7%2C6.3c0%2C0.5%2C0.1%2C0.9%2C0.2%2C1.4C47%2C8%2C47.2%2C8.4%2C47.5%2C8.7c0.2%2C0.3%2C0.6%2C0.6%2C0.9%2C0.7c0.4%2C0.2%2C0.8%2C0.3%2C1.2%2C0.3c0.8%2C0%2C1.6-0.3%2C2.1-0.8%0D%0A%09c0.6-0.7%2C0.9-1.7%2C0.8-2.6c0-0.9-0.2-1.8-0.8-2.5c-0.5-0.7-1.3-1-2.2-1c-0.4%2C0-0.8%2C0.1-1.1%2C0.2c-0.4%2C0.1-0.7%2C0.3-0.9%2C0.6%0D%0A%09c-0.3%2C0.3-0.5%2C0.7-0.6%2C1.1C46.8%2C5.2%2C46.7%2C5.7%2C46.7%2C6.3C46.7%2C6.3%2C46.7%2C6.3%2C46.7%2C6.3z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M55.9%2C0.6h3.8L60.1%2C2h0.1c0.9-1.2%2C2.3-1.8%2C3.8-1.7c0.6%2C0%2C1.3%2C0.1%2C1.9%2C0.3c0.6%2C0.2%2C1.1%2C0.6%2C1.5%2C1%0D%0A%09c0.5%2C0.5%2C0.8%2C1.1%2C1%2C1.8c0.2%2C0.8%2C0.3%2C1.7%2C0.2%2C2.6c0%2C0.9-0.1%2C1.8-0.4%2C2.6c-0.2%2C0.7-0.6%2C1.4-1.1%2C2c-0.5%2C0.5-1.1%2C1-1.8%2C1.2%0D%0A%09c-0.8%2C0.3-1.6%2C0.4-2.4%2C0.4c-0.5%2C0-0.9%2C0-1.4-0.1c-0.4-0.1-0.8-0.2-1.1-0.3v4.6h-2.9V3.1h-1.7L55.9%2C0.6L55.9%2C0.6z%20M63.1%2C2.8%0D%0A%09c-0.5%2C0-1.1%2C0.1-1.6%2C0.4c-0.5%2C0.3-0.8%2C0.7-1%2C1.3v4.7c0.3%2C0.2%2C0.6%2C0.3%2C0.9%2C0.4c0.4%2C0.1%2C0.8%2C0.1%2C1.2%2C0.1c0.4%2C0%2C0.8-0.1%2C1.2-0.2%0D%0A%09c0.4-0.1%2C0.7-0.4%2C0.9-0.7c0.3-0.3%2C0.5-0.8%2C0.6-1.2c0.2-0.6%2C0.2-1.1%2C0.2-1.7c0.1-0.8-0.2-1.6-0.7-2.3C64.4%2C3.1%2C63.8%2C2.8%2C63.1%2C2.8%0D%0A%09L63.1%2C2.8z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M81.2%2C10.8c-0.6%2C0.5-1.4%2C0.8-2.2%2C1c-0.8%2C0.2-1.7%2C0.4-2.6%2C0.4c-0.9%2C0-1.8-0.1-2.6-0.4c-0.7-0.3-1.3-0.6-1.9-1.2%0D%0A%09c-0.5-0.5-0.9-1.2-1.2-1.9c-0.3-0.8-0.4-1.6-0.4-2.4c0-0.9%2C0.1-1.7%2C0.5-2.5c0.3-0.7%2C0.7-1.3%2C1.3-1.9c0.6-0.5%2C1.3-0.9%2C2-1.2%0D%0A%09c0.8-0.3%2C1.6-0.4%2C2.4-0.4c0.8%2C0%2C1.6%2C0.1%2C2.3%2C0.3c0.6%2C0.1%2C1.1%2C0.3%2C1.7%2C0.6v3.9h-2.5V3.1c-0.5-0.1-0.9-0.2-1.4-0.2%0D%0A%09c-0.4%2C0-0.8%2C0.1-1.3%2C0.2c-0.4%2C0.1-0.8%2C0.3-1.1%2C0.6c-0.3%2C0.3-0.6%2C0.6-0.8%2C1c-0.2%2C0.5-0.3%2C1-0.3%2C1.5c0%2C0.5%2C0.1%2C0.9%2C0.3%2C1.3%0D%0A%09c0.3%2C0.8%2C1%2C1.5%2C1.8%2C1.8c0.5%2C0.2%2C1%2C0.3%2C1.5%2C0.3c0.7%2C0%2C1.4-0.1%2C2.1-0.3c0.4-0.2%2C0.8-0.4%2C1.2-0.6L81.2%2C10.8z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M88%2C7.4h-1.4v4.4h-2.9V0.6h2.9v4.6h1.2l3.7-4.6h3.3l-4.5%2C5.2l2.8%2C3.5h2v2.5h-3.4L88%2C7.4z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M104.1%2C6.8l0.1-1.6h-0.1l-5.4%2C6.7h-2.3V0.6h2.9V6l-0.1%2C1.5h0.1l5.4-6.9h2.3v11.2h-2.9L104.1%2C6.8L104.1%2C6.8z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M120%2C10.7c-0.2%2C0.2-0.5%2C0.4-0.8%2C0.5c-0.3%2C0.2-0.7%2C0.4-1.1%2C0.5c-0.4%2C0.2-0.9%2C0.3-1.4%2C0.4c-0.5%2C0.1-1%2C0.1-1.6%2C0.1%0D%0A%09c-0.9%2C0-1.7-0.1-2.6-0.4c-1.4-0.5-2.6-1.6-3.1-3c-0.3-0.8-0.4-1.6-0.4-2.5c0-0.9%2C0.1-1.8%2C0.5-2.6c0.3-0.7%2C0.7-1.3%2C1.3-1.9%0D%0A%09c0.5-0.5%2C1.2-0.9%2C1.9-1.1c1.3-0.4%2C2.8-0.5%2C4.1-0.1c0.6%2C0.1%2C1.2%2C0.4%2C1.7%2C0.8c0.5%2C0.4%2C1%2C0.9%2C1.3%2C1.5c0.3%2C0.7%2C0.5%2C1.5%2C0.5%2C2.3%0D%0A%09c0%2C0.7-0.1%2C1.4-0.2%2C2.1H112c0%2C0.4%2C0.1%2C0.8%2C0.3%2C1.2c0.2%2C0.3%2C0.4%2C0.6%2C0.7%2C0.8c0.3%2C0.2%2C0.7%2C0.4%2C1.1%2C0.5c0.4%2C0.1%2C0.8%2C0.2%2C1.3%2C0.1%0D%0A%09c0.7%2C0%2C1.5-0.1%2C2.2-0.3c0.5-0.2%2C1-0.4%2C1.4-0.8L120%2C10.7z%20M115.2%2C2.7c-0.4%2C0-0.7%2C0.1-1.1%2C0.2c-0.3%2C0.1-0.6%2C0.3-0.9%2C0.5%0D%0A%09c-0.3%2C0.2-0.5%2C0.5-0.7%2C0.8c-0.2%2C0.3-0.3%2C0.6-0.3%2C1h5.5c0-0.6-0.2-1.3-0.7-1.8C116.5%2C2.9%2C115.8%2C2.6%2C115.2%2C2.7L115.2%2C2.7z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M78%2C28.3l0.1-1.6h0l-5.4%2C6.7h-2.3V22.2h2.9v5.3L73.2%2C29h0.1l5.4-6.9H81v11.3h-3V28.3z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M91.1%2C29h-4.8v4.4h-2.9V22.2h2.9v4.2h4.8v-4.2H94v11.2h-2.9V29z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M97.3%2C30.9h2.9v-6.2h-1.8v1.9h-2.5v-4.5h11.5v4.5H105v-1.9h-1.8v6.2h2.9v2.5h-8.8V30.9z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M120%2C32.2c-0.2%2C0.2-0.5%2C0.4-0.8%2C0.5c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.5c-0.4%2C0.2-0.9%2C0.3-1.4%2C0.4c-0.5%2C0.1-1%2C0.1-1.6%2C0.1%0D%0A%09c-0.9%2C0-1.7-0.1-2.6-0.4c-1.4-0.5-2.6-1.6-3.1-3c-0.3-0.8-0.4-1.6-0.4-2.5c0-0.9%2C0.1-1.8%2C0.5-2.6c0.3-0.7%2C0.7-1.3%2C1.3-1.9%0D%0A%09c0.6-0.5%2C1.2-0.9%2C1.9-1.1c1.3-0.4%2C2.8-0.5%2C4.1-0.1c0.6%2C0.1%2C1.2%2C0.4%2C1.7%2C0.8c0.5%2C0.4%2C1%2C0.9%2C1.3%2C1.5c0.3%2C0.7%2C0.5%2C1.5%2C0.5%2C2.3%0D%0A%09c0%2C0.7-0.1%2C1.4-0.2%2C2.1H112c0%2C0.4%2C0.1%2C0.8%2C0.3%2C1.2c0.2%2C0.3%2C0.4%2C0.6%2C0.7%2C0.8c0.3%2C0.2%2C0.7%2C0.4%2C1.1%2C0.5c0.4%2C0.1%2C0.8%2C0.2%2C1.3%2C0.1%0D%0A%09c0.7%2C0%2C1.5-0.1%2C2.2-0.3c0.5-0.2%2C1-0.4%2C1.4-0.8L120%2C32.2z%20M115.2%2C24.2c-0.4%2C0-0.7%2C0.1-1.1%2C0.2c-0.3%2C0.1-0.6%2C0.3-0.9%2C0.5%0D%0A%09c-0.3%2C0.2-0.5%2C0.5-0.7%2C0.8c-0.2%2C0.3-0.3%2C0.6-0.3%2C1h5.5c0.1-1.2-0.8-2.3-2-2.4C115.5%2C24.1%2C115.3%2C24.2%2C115.2%2C24.2L115.2%2C24.2z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M121%2C22.2h3.8l0.3%2C1.4h0.1c0.9-1.2%2C2.3-1.8%2C3.8-1.7c0.6%2C0%2C1.3%2C0.1%2C1.9%2C0.3c0.6%2C0.2%2C1.1%2C0.6%2C1.5%2C1%0D%0A%09c0.5%2C0.5%2C0.8%2C1.1%2C1%2C1.8c0.2%2C0.8%2C0.4%2C1.7%2C0.3%2C2.5c0%2C0.9-0.1%2C1.8-0.4%2C2.6c-0.2%2C0.7-0.6%2C1.4-1.1%2C2c-0.5%2C0.5-1.1%2C1-1.8%2C1.2%0D%0A%09c-0.8%2C0.3-1.6%2C0.4-2.4%2C0.4c-0.5%2C0-0.9%2C0-1.4-0.1c-0.4-0.1-0.8-0.2-1.1-0.3v4.6h-2.9V24.6H121V22.2z%20M128.1%2C24.3%0D%0A%09c-0.6%2C0-1.1%2C0.1-1.6%2C0.4c-0.5%2C0.3-0.8%2C0.7-1%2C1.3v4.7c0.3%2C0.2%2C0.6%2C0.3%2C0.9%2C0.4c0.4%2C0.1%2C0.8%2C0.1%2C1.2%2C0.1c0.4%2C0%2C0.8-0.1%2C1.2-0.2%0D%0A%09c0.4-0.1%2C0.7-0.4%2C0.9-0.7c0.3-0.3%2C0.5-0.8%2C0.6-1.2c0.2-0.6%2C0.2-1.1%2C0.2-1.7c0.1-0.8-0.2-1.6-0.7-2.3%0D%0A%09C129.5%2C24.6%2C128.8%2C24.3%2C128.1%2C24.3z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M143.1%2C29h-4.8v4.4h-2.9V22.2h2.9v4.2h4.8v-4.2h2.9v11.2h-2.9V29z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M159%2C32.2c-0.2%2C0.2-0.5%2C0.4-0.8%2C0.5c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.5c-0.4%2C0.2-0.9%2C0.3-1.4%2C0.4c-0.5%2C0.1-1%2C0.1-1.6%2C0.1%0D%0A%09c-0.9%2C0-1.7-0.1-2.6-0.4c-1.4-0.5-2.6-1.6-3.1-3c-0.3-0.8-0.4-1.6-0.4-2.5c0-0.9%2C0.1-1.8%2C0.5-2.6c0.3-0.7%2C0.7-1.3%2C1.3-1.9%0D%0A%09c0.6-0.5%2C1.2-0.9%2C1.9-1.1c1.3-0.4%2C2.8-0.5%2C4.1-0.1c0.6%2C0.1%2C1.2%2C0.4%2C1.7%2C0.8c0.5%2C0.4%2C1%2C0.9%2C1.3%2C1.5c0.3%2C0.7%2C0.5%2C1.5%2C0.5%2C2.3%0D%0A%09c0%2C0.7-0.1%2C1.4-0.2%2C2.1H151c0%2C0.4%2C0.1%2C0.8%2C0.3%2C1.2c0.2%2C0.3%2C0.4%2C0.6%2C0.7%2C0.8c0.3%2C0.2%2C0.7%2C0.4%2C1.1%2C0.5c0.4%2C0.1%2C0.8%2C0.2%2C1.3%2C0.1%0D%0A%09c0.7%2C0%2C1.5-0.1%2C2.2-0.3c0.5-0.2%2C1-0.4%2C1.4-0.8L159%2C32.2z%20M154.1%2C24.2c-0.4%2C0-0.7%2C0.1-1.1%2C0.2c-0.3%2C0.1-0.6%2C0.3-0.9%2C0.5%0D%0A%09c-0.3%2C0.2-0.5%2C0.5-0.7%2C0.8c-0.2%2C0.3-0.3%2C0.6-0.3%2C1h5.5c0.1-1.2-0.8-2.3-2-2.4C154.5%2C24.2%2C154.3%2C24.2%2C154.1%2C24.2L154.1%2C24.2%0D%0A%09L154.1%2C24.2z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M162.3%2C30.9h2.9v-6.2h-1.8v1.9H161v-4.5h11.5v4.5h-2.5v-1.9h-1.8v6.2h2.9v2.5h-8.8L162.3%2C30.9%0D%0A%09C162.4%2C30.9%2C162.3%2C30.9%2C162.3%2C30.9z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M68.7%2C43.7h3.8l0.3%2C1.3h0.1c0.9-1.2%2C2.3-1.8%2C3.8-1.7c0.6%2C0%2C1.3%2C0.1%2C1.9%2C0.3c0.6%2C0.2%2C1.1%2C0.6%2C1.5%2C1%0D%0A%09c0.5%2C0.5%2C0.8%2C1.1%2C1%2C1.8c0.2%2C0.8%2C0.3%2C1.7%2C0.3%2C2.6c0%2C0.9-0.1%2C1.7-0.4%2C2.6c-0.2%2C0.7-0.6%2C1.4-1.1%2C2c-0.5%2C0.5-1.1%2C1-1.8%2C1.2%0D%0A%09c-0.8%2C0.3-1.6%2C0.4-2.4%2C0.4c-0.5%2C0-0.9%2C0-1.4-0.1c-0.4-0.1-0.8-0.2-1.1-0.3v4.6h-2.9V46.1h-1.7L68.7%2C43.7L68.7%2C43.7z%20M75.8%2C45.8%0D%0A%09c-0.6%2C0-1.1%2C0.1-1.6%2C0.4c-0.5%2C0.3-0.8%2C0.7-1%2C1.3v4.7c0.3%2C0.2%2C0.6%2C0.3%2C0.9%2C0.4c0.4%2C0.1%2C0.8%2C0.1%2C1.2%2C0.2c0.4%2C0%2C0.8-0.1%2C1.2-0.2%0D%0A%09c0.4-0.1%2C0.7-0.4%2C0.9-0.7c0.3-0.3%2C0.5-0.8%2C0.6-1.2c0.2-0.6%2C0.2-1.1%2C0.2-1.7c0.1-0.8-0.2-1.6-0.7-2.3C77.2%2C46.1%2C76.5%2C45.8%2C75.8%2C45.8%0D%0A%09C75.8%2C45.8%2C75.8%2C45.8%2C75.8%2C45.8z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M93.7%2C53.7c-0.2%2C0.2-0.5%2C0.4-0.8%2C0.5c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.5c-0.4%2C0.2-0.9%2C0.3-1.4%2C0.4%0D%0A%09c-0.5%2C0.1-1%2C0.1-1.6%2C0.1c-0.9%2C0-1.7-0.1-2.6-0.4c-1.4-0.5-2.6-1.6-3.1-3c-0.3-0.8-0.4-1.6-0.4-2.5c0-0.9%2C0.1-1.8%2C0.5-2.6%0D%0A%09c0.3-0.7%2C0.7-1.3%2C1.3-1.8c0.6-0.5%2C1.2-0.9%2C1.9-1.1c1.3-0.4%2C2.8-0.5%2C4.1-0.2c0.6%2C0.1%2C1.2%2C0.4%2C1.7%2C0.8c0.5%2C0.4%2C1%2C0.9%2C1.3%2C1.5%0D%0A%09c0.3%2C0.7%2C0.5%2C1.5%2C0.4%2C2.3c0%2C0.7-0.1%2C1.4-0.2%2C2.1h-8c0%2C0.4%2C0.1%2C0.8%2C0.3%2C1.2c0.2%2C0.3%2C0.4%2C0.6%2C0.7%2C0.8c0.3%2C0.2%2C0.7%2C0.4%2C1.1%2C0.5%0D%0A%09c0.4%2C0.1%2C0.8%2C0.2%2C1.3%2C0.2c0.7%2C0%2C1.5-0.1%2C2.2-0.3c0.5-0.2%2C1-0.4%2C1.4-0.8L93.7%2C53.7z%20M88.8%2C45.7c-0.4%2C0-0.7%2C0.1-1.1%2C0.2%0D%0A%09c-0.3%2C0.1-0.6%2C0.3-0.9%2C0.5c-0.3%2C0.2-0.5%2C0.5-0.7%2C0.8c-0.2%2C0.3-0.3%2C0.6-0.3%2C1h5.5c0.1-1.2-0.8-2.3-2-2.4C89.2%2C45.7%2C89%2C45.7%2C88.8%2C45.7%0D%0A%09L88.8%2C45.7z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M95.4%2C54.9V43.7h2.7v8.6h2v-8.6h2.7v8.6h2v-8.6h2.7v11.2H95.4z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M119.7%2C53.7c-0.2%2C0.2-0.5%2C0.4-0.8%2C0.5c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.5c-0.4%2C0.2-0.9%2C0.3-1.4%2C0.4%0D%0A%09c-0.5%2C0.1-1%2C0.1-1.6%2C0.1c-0.9%2C0-1.7-0.1-2.6-0.4c-1.4-0.5-2.6-1.6-3.1-3c-0.3-0.8-0.4-1.6-0.4-2.5c0-0.9%2C0.1-1.8%2C0.5-2.6%0D%0A%09c0.3-0.7%2C0.7-1.3%2C1.3-1.8c0.6-0.5%2C1.2-0.9%2C1.9-1.1c1.3-0.4%2C2.8-0.5%2C4.1-0.2c0.6%2C0.1%2C1.2%2C0.4%2C1.7%2C0.8c0.5%2C0.4%2C1%2C0.9%2C1.3%2C1.5%0D%0A%09c0.3%2C0.7%2C0.5%2C1.5%2C0.5%2C2.3c0%2C0.7-0.1%2C1.4-0.2%2C2.1h-8.1c0%2C0.4%2C0.1%2C0.8%2C0.3%2C1.2c0.2%2C0.3%2C0.4%2C0.6%2C0.7%2C0.8c0.3%2C0.2%2C0.7%2C0.4%2C1.1%2C0.5%0D%0A%09c0.4%2C0.1%2C0.8%2C0.2%2C1.3%2C0.2c0.7%2C0%2C1.5-0.1%2C2.2-0.3c0.5-0.2%2C1-0.4%2C1.4-0.8L119.7%2C53.7z%20M114.9%2C45.7c-0.4%2C0-0.7%2C0.1-1.1%2C0.2%0D%0A%09c-0.3%2C0.1-0.6%2C0.3-0.9%2C0.5c-0.3%2C0.2-0.5%2C0.5-0.7%2C0.8c-0.2%2C0.3-0.3%2C0.6-0.3%2C1h5.5c0.1-1.2-0.8-2.3-2-2.4%0D%0A%09C115.2%2C45.7%2C115%2C45.7%2C114.9%2C45.7L114.9%2C45.7z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M129.9%2C50.5h-4.8v4.4h-2.9V43.7h2.9v4.2h4.8v-4.2h2.9v11.2h-2.9L129.9%2C50.5L129.9%2C50.5z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M142.8%2C49.8l0.2-1.6h-0.1l-5.4%2C6.7h-2.3V43.7h2.9V49l-0.1%2C1.5h0.1l5.4-6.9h2.3v11.2h-2.9L142.8%2C49.8%0D%0A%09C142.9%2C49.8%2C142.8%2C49.8%2C142.8%2C49.8z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M147.8%2C52.4h1.7l1.1-1.7c-0.7-0.2-1.3-0.7-1.7-1.3c-0.4-0.7-0.6-1.4-0.5-2.2c-0.1-1.2%2C0.5-2.4%2C1.6-3%0D%0A%09c1.3-0.7%2C2.9-1.1%2C4.4-1c0.4%2C0%2C0.7%2C0%2C1.1%2C0l1.2%2C0.1c0.4%2C0%2C0.8%2C0%2C1.1%2C0.1l0.9%2C0.1v11.3h-2.9v-3.8h-2.2l-2.4%2C3.8h-3.3L147.8%2C52.4%0D%0A%09C147.8%2C52.4%2C147.8%2C52.4%2C147.8%2C52.4z%20M155.7%2C49v-3l-0.4-0.1h-0.5h-0.5h-0.4c-0.3%2C0-0.7%2C0-1%2C0.1c-0.3%2C0.1-0.6%2C0.2-0.8%2C0.3%0D%0A%09c-0.2%2C0.1-0.4%2C0.3-0.6%2C0.5c-0.1%2C0.2-0.2%2C0.5-0.2%2C0.8c0%2C0.2%2C0.1%2C0.5%2C0.2%2C0.7c0.1%2C0.2%2C0.3%2C0.3%2C0.5%2C0.4c0.3%2C0.1%2C0.5%2C0.2%2C0.8%2C0.2%0D%0A%09c0.4%2C0%2C0.8%2C0%2C1.1%2C0L155.7%2C49L155.7%2C49z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M174.5%2C41.6l1.8%2C0.8l-6.7%2C15.1l-1.8-0.9L174.5%2C41.6z%22%2F%3E%0D%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M187.3%2C54.5l-1.1-1.7l6.8-4l-6.8-4.1l1.1-1.7l8.7%2C5.4v0.9L187.3%2C54.5z%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A") no-repeat center;
   background-size: 100%;
   margin-left: auto;
+}
+@media (max-width: 1599px) {
+  .uw {
+    margin-top: 10px;
+  }
 }
 .breadcrumbs {
   background-color: #f4efe0;
@@ -1519,14 +1664,29 @@ a.breadcrumbs__item:hover {
   line-height: 16px;
   margin-bottom: 1.25rem;
 }
+@media (max-width: 1599px) {
+  .date {
+    margin-bottom: .5rem;
+  }
+}
 .detail.wrapper {
   margin-left: 6.25rem;
+}
+@media (max-width: 1599px) {
+  .detail.wrapper {
+    margin-left: 0;
+  }
 }
 .detail img {
   max-width: 100%;
 }
 .detail > img {
   margin-bottom: 3rem;
+}
+@media (max-width: 1599px) {
+  .detail > img {
+    margin-bottom: 2rem;
+  }
 }
 .detail p {
   font-size: 14px;
@@ -1615,13 +1775,36 @@ a.breadcrumbs__item:hover {
   height: 100%;
   top: 0;
 }
+@media (max-width: 1599px) {
+  .slider-prev:hover,
+  .slider-next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 1599px) {
+  .slider-prev,
+  .slider-next {
+    width: 80px;
+    transition: background-color 0.3s;
+  }
+}
 .slider-prev {
   left: -74px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+@media (max-width: 1599px) {
+  .slider-prev {
+    left: 0;
+  }
+}
 .slider-next {
   right: -74px;
+}
+@media (max-width: 1599px) {
+  .slider-next {
+    right: 0;
+  }
 }
 .slider-thumbs {
   width: 100%;
@@ -1674,6 +1857,7 @@ a.breadcrumbs__item:hover {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 2px solid #008cd3;
+  text-align: left;
 }
 .table td {
   font-size: 14px;
