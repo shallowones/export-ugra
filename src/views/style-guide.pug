@@ -1,0 +1,190 @@
+extends layout
+
+block content
+
+  -
+    var slider = [
+      'd-1',
+      'd-2',
+      'd-3',
+      'd-4',
+      'd-5',
+      'd-6',
+      'd-7',
+      'd-8'
+    ]
+
+    var table = [
+      {
+        date: '25.10.2017',
+        city: 'Ростов-на-Дону',
+        event: 'Мониторинг условий экспорта позволит сформировать систему выявления барьеров для предприятий'
+      },
+      {
+        date: '28.10.2017',
+        city: 'Санкт-Петербург',
+        event: 'Упрощение порядка оформления различной разрешительной документации'
+      }
+    ]
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Новости', 'Товарооборот между Россией и Словакией вырос почти на треть')
+      .detail.wrapper
+        .wrapper-min
+          .date 04.12.2017
+          h1.h1 Товарооборот между Россией и Словакией вырос почти на треть
+        img(src="images/detail.jpg")
+        .wrapper-min
+          h4.h4.
+            Проектный комитет по ключевому направлению стратегического развития
+            России «Международная кооперация и экспорт» утвердил регламент проведения
+            мониторинга и анализа условий экспорта несырьевой продукции в Российской Федерации
+          p.
+            <a href="#">Проектный комитет</a> по ключевому направлению стратегического развития России
+            <a href="#">«Международная кооперация и экспорт»</a> утвердил регламент проведения мониторинга
+            и анализа условий экспорта несырьевой продукции в Российской Федерации и в
+            иностранных государствах, который будет осуществляться Аналитическим
+            конъюнктурным центром <a href="#">Российского Экспортного Центра</a>. В документе фиксируются
+            основные механизмы, инструменты и источники для получения данных, устанавливаются
+            участники мониторинга.
+          p.
+            В документе фиксируются основные механизмы, инструменты и источники для получения
+            данных, устанавливаются участники мониторинга.
+          p.
+            На протяжении всего года специалистами РЭЦ будут собираться сведения от
+            экспортеров о сложностях, с которыми им приходится сталкиваться в процессе
+            поставок продукции на иностранные рынки.
+          h4.h4 Центр планирует выполнять специализированные опросы
+          p.
+            Проектный комитет по ключевому направлению стратегического развития России
+            <a href="#">«Международная кооперация и экспорт»</a> утвердил регламент проведения
+            мониторинга и анализа условий экспорта несырьевой продукции в Российской Федерации и
+            в иностранных государствах:
+          ul
+            li упрощение порядка оформления различной разрешительной документации
+            li упрощение валютного контроля
+          ol
+            li Упрощение процедур по возмещению уплаченного экспортерами НДС
+            li Модернизации пунктов пропуска и морских портов
+          br
+          br
+          .slider-block
+            .swiper-container.slider.js-slider
+              .swiper-wrapper
+                each item in slider
+                  .swiper-slide.slider-slide(style='background-image: url(\'images/' + item + '.jpg\')')
+            .swiper-button-prev.slider-prev
+            .swiper-button-next.slider-next
+          .swiper-container.slider-thumbs.js-slider-thumbs
+            .swiper-wrapper
+              each item in slider
+                .swiper-slide.slider-thumbs-slide(style='background-image: url(\'images/' + item + '.jpg\')')
+          br
+          br
+          h3.h3 Мониторинг условий экспорта позволит сформировать систему выявления барьеров
+          table.table
+            tbody
+              tr
+                th Дата
+                th Город
+                th Мероприятие
+              each counter in [1, 2]
+                each item in table
+                  tr
+                    td= item.date
+                    td.nowrap= item.city
+                    td= item.event
+          br
+          a(href="file.doc").file Порядок оказания поддержки экспортно-ориентированным СМСП Югры
+            span 15 mb, doc
+          a(href="file.xls").file Форма для внесения в каталог экспортно-ориентированных субъектов
+            span 15 mb, xls
+          a(href="file.pdf").file Порядок оказания поддержки экспортно-ориентированным СМСП Югры
+            span 15 mb, pdf
+          a(href="file.zip").file Порядок оказания поддержки экспортно-ориентированным СМСП Югры
+            span 15 mb, zip
+          br
+          br
+          h3.h3 Написать нам
+          form(action="#").form
+            .form-flex
+              .form-control
+                input(type="text", placeholder="Ваше имя").form-control__input
+              .form-control.invalid
+                input(type="text", placeholder="Ваше e-mail", value="12266@mail").form-control__input
+                i.err Ошибка
+            .form-flex
+              .form-control.invalid
+                input(type="text", placeholder="Ваш телефон").form-control__input
+                i.err Заполните
+              .form-control
+                input(type="text", placeholder="Компания", value="ООО Рога и Копыта").form-control__input
+            .form-control
+              textarea(placeholder="Напишите Ваше сообщение").form-control__textarea
+            br
+            .form-flex
+              .form-control
+                input(type="checkbox", id="check-1", name="check", checked).form-control__check
+                label(for="check-1").form-control__check-label Да
+                input(type="checkbox", id="check-2", name="check").form-control__check
+                label(for="check-2").form-control__check-label Нет
+              .form-control
+                input(type="radio", id="radio-1", name="radio", checked).form-control__radio
+                label(for="radio-1").form-control__radio-label Да
+                input(type="radio", id="radio-2", name="radio").form-control__radio
+                label(for="radio-2").form-control__radio-label Нет
+              button.button Отправить
+            .form-flex
+              // после успешной отправки формы добавить класс .success и атрибут disabled
+              button.button.success(style="margin-left: auto", disabled) Отправлено!
+          br
+          br
+          .hidden
+            .hidden-block
+              b «Международная кооперация и экспорт»
+              p.
+                Мониторинг условий экспорта позволит сформировать систему выявления
+                барьеров для предприятий, ведущих экспортную деятельность, обеспечит
+                оперативное внесение изменений в нормативные документы и изменение
+                существующей практики на местах.
+            button(type="button").hidden__button.js-hidden
+              span «Международная кооперация и экспорт»
+          .hidden
+            .hidden-block(style="display: block")
+              b Модернизации пунктов пропуска и морских портов
+              p.
+                Мониторинг условий экспорта позволит сформировать систему выявления
+                барьеров для предприятий, ведущих экспортную деятельность, обеспечит
+                оперативное внесение изменений в нормативные документы и изменение
+                существующей практики на местах.
+            button(type="button").hidden__button.js-hidden.show
+              span Свернуть
+          .hidden
+            .hidden-block
+              b Упрощение порядка оформления различной разрешительной документации
+              p.
+                Мониторинг условий экспорта позволит сформировать систему выявления
+                барьеров для предприятий, ведущих экспортную деятельность, обеспечит
+                оперативное внесение изменений в нормативные документы и изменение
+                существующей практики на местах.
+            button(type="button").hidden__button.js-hidden
+              span Упрощение порядка оформления различной разрешительной документации
+          br
+          br
+          nav.pag
+            a(href="#").pag__item Назад
+            a(href="#").pag__item 1
+            a(href="#").pag__item 2
+            span.pag__item.active 3
+            a(href="#").pag__item 4
+            a(href="#").pag__item 5
+            a(href="#").pag__item ...
+            a(href="#").pag__item 99
+            // тег span вместо ссылки только в том случае, если переход вперед/назад не возможен
+            span.pag__item Вперед
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap

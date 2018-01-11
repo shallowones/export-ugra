@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40.3 48" style="enable-background:new 0 0 40.3 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#F6F6F6;}
+	.st1{clip-path:url(#SVGID_2_);fill:#E0E0E0;}
+	.st2{clip-path:url(#SVGID_4_);fill:#F27E22;}
+	.st3{clip-path:url(#SVGID_4_);fill:#E0AD1F;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{clip-path:url(#SVGID_6_);fill:#E0AD1F;}
+	.st6{clip-path:url(#SVGID_8_);fill:#F5D576;}
+	.st7{fill:#FFFFFF;}
+	.st8{font-family:'TwCenMT-Bold';}
+	.st9{font-size:9px;}
+	.st10{fill:#E0E0E0;}
+	.st11{fill:#F6F6F6;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0.2" y="18" width="40" height="30"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st0" d="M5.2,47.5c-2.5,0-4.5-2-4.5-4.5V5c0-2.5,2-4.5,4.5-4.5H29l10.7,10.7V43c0,2.5-2,4.5-4.5,4.5H5.2z"/>
+	<path class="st1" d="M28.8,1l10.4,10.4V43c0,2.2-1.8,4-4,4h-30c-2.2,0-4-1.8-4-4V5c0-2.2,1.8-4,4-4H28.8 M29.2,0h-24
+		c-2.8,0-5,2.2-5,5v38c0,2.8,2.2,5,5,5h30c2.8,0,5-2.2,5-5V11L29.2,0L29.2,0z"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="0.2" y="0" width="40" height="18"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st2" d="M5.2,47.5c-2.5,0-4.5-2-4.5-4.5V5c0-2.5,2-4.5,4.5-4.5H29l10.7,10.7V43c0,2.5-2,4.5-4.5,4.5H5.2z"/>
+	<path class="st3" d="M28.8,1l10.4,10.4V43c0,2.2-1.8,4-4,4h-30c-2.2,0-4-1.8-4-4V5c0-2.2,1.8-4,4-4H28.8 M29.2,0h-24
+		c-2.8,0-5,2.2-5,5v38c0,2.8,2.2,5,5,5h30c2.8,0,5-2.2,5-5V11L29.2,0L29.2,0z"/>
+	<g class="st4">
+		<defs>
+			<path id="SVGID_5_" d="M40.2,43c0,2.8-2.2,5-5,5h-30c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h24l11,11V43z"/>
+		</defs>
+		<clipPath id="SVGID_6_">
+			<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+		</clipPath>
+		<polygon class="st5" points="30.6,9.5 40.3,19.2 40.3,9.5 		"/>
+	</g>
+	<g class="st4">
+		<defs>
+			<path id="SVGID_7_" d="M40.2,43c0,2.8-2.2,5-5,5h-30c-2.8,0-5-2.2-5-5V5c0-2.8,2.2-5,5-5h24l11,11V43z"/>
+		</defs>
+		<clipPath id="SVGID_8_">
+			<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st6" d="M40.2,11h-6c-2.8,0-5-2.2-5-5V0h11V11z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 5.1667 12)" class="st7 st8 st9">ZIP</text>
+<rect x="23.2" y="44" class="st10" width="6" height="4"/>
+<rect x="23.2" y="41" class="st10" width="3" height="3"/>
+<rect x="26.2" y="38" class="st10" width="3" height="3"/>
+<rect x="23.2" y="35" class="st10" width="3" height="3"/>
+<rect x="26.2" y="32" class="st10" width="3" height="3"/>
+<path class="st10" d="M28.6,18h-4.8l-2,5.9c-0.5,1.4-0.2,3,0.6,4.2c0.9,1.2,2.3,1.9,3.7,1.9c0,0,0,0,0,0c1.5,0,2.9-0.7,3.7-1.9
+	c0.9-1.2,1.1-2.7,0.6-4.2L28.6,18z"/>
+<circle class="st11" cx="26.2" cy="25" r="2"/>
+</svg>

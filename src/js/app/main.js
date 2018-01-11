@@ -90,5 +90,67 @@
       })
     }
 
+    // detail slider
+    {
+      const countSlides = 6
+      const slider = new Swiper('.js-slider', {
+        loop: true,
+        loopedSlides: countSlides,
+        slidesPerView: 'auto',
+        grabCursor: true,
+        navigation: {
+          nextEl: '.slider-next',
+          prevEl: '.slider-prev'
+        }
+      })
+      new Swiper('.js-slider-thumbs', {
+        loop: true,
+        loopedSlides: countSlides,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        controller: {
+          control: slider
+        },
+        on: {
+          init: function () {
+            slider.controller.control = this
+          }
+        }
+      })
+    }
+
+    // invalid form controls
+    {
+      $('.form-control.invalid').find('.form-control__input, .form-control__textarea').focus((e) => {
+        $(e.currentTarget).parent().removeClass('invalid')
+      })
+    }
+
+    // hidden
+    {
+      const hideButtonText = 'Свернуть'
+      const showClass = 'show'
+      const duration = 300
+      $('.js-hidden').on('click', (e) => {
+        const $this = $(e.currentTarget)
+        const $hiddenBlock = $this.parent().find('.hidden-block')
+        const $text = $this.find('span')
+        const isShow = $this.hasClass(showClass)
+        $this.stop().animate({ opacity: 0 }, duration, () => {
+          if (isShow) {
+            $text.text(
+              $hiddenBlock.find('b').text()
+            )
+          } else {
+            $text.text(hideButtonText)
+          }
+          $this.toggleClass(showClass, !isShow)
+          $hiddenBlock.slideToggle(duration)
+          setTimeout(() => { $this.stop().animate({ opacity: 1 }, duration) }, 200)
+        })
+      })
+    }
+
   })
 })(jQuery, Swiper)

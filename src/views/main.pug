@@ -101,15 +101,6 @@ block content
                   input(type="radio", id="radio-2", name="radio").form-control__radio
                   label(for="radio-2").form-control__radio-label Нет
               button.button Отправить
-        .line
-          h1.h1 Партнеры
-          .partners-controls
-            .swiper-button-prev.js-partners-prev
-            .swiper-button-next.js-partners-next
-        .swiper-container.partners.js-partners
-          .swiper-wrapper
-            each count in [1, 2]
-              each item in [1, 2, 3, 4, 5, 6]
-                a(href="#").swiper-slide.partners__item
-                  img(src='images/partner-' + item + '.png')
-  include includes/footer
+        include includes/partners
+  footer.footer
+    include includes/footer-wrap
