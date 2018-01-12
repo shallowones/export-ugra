@@ -13,7 +13,8 @@
   <body>
     <div class="page">
       <header class="header">
-        <div class="header-wrapper"><a class="header__logo" href="#"></a>
+        <div class="header-wrapper">
+          <button class="mobile__button js-mobile" type="button"><span></span><span></span><span></span><span></span></button><a class="header__logo" href="#"></a>
           <div class="header-desc">Расширяя границы сотрудничества</div><a class="header__iso" href="#"></a>
               <div class="header-social"><span>Мы в социальных сетях</span><a class="header-social__item fb" href="#"></a><a class="header-social__item vk" href="#"></a><a class="header-social__item you" href="#"></a><a class="header-social__item insta" href="#"></a>
               </div>
@@ -25,46 +26,44 @@
       </header>
       <main class="main">
         <div class="left">
-          <nav class="menu">
-            <ul>
-              <li><a href="#">О центре</a></li>
-              <li class="parent"><span>Услуги центра</span>
+              <nav class="menu js-menu">
                 <ul>
-                  <li><a href="#">Все услуги</a></li>
-                  <li><a href="#">Поиск иностранных партнеров</a></li>
-                  <li><a href="#">Проведение маркетинговых исследований</a></li>
-                  <li><a href="#">Оказание консультационных услуг по любым вопросам </a></li>
-                  <li><a href="#">ВЭД</a></li>
-                  <li><a href="#">Адаптация компании к международному рынку и модернизации экспортного предложения</a></li>
-                  <li><a href="#">Организация участия в международных выставках и бизнес-миссиях</a></li>
-                  <li><a href="#">Участие в каталоге экспортно-ориентированных предприятий Югры</a></li>
-                  <li><a href="#">Консультации</a></li>
-                  <li><a href="#">Финансовая поддержка</a></li>
+                  <li><a href="#">О центре</a></li>
+                  <li class="parent"><span>Услуги центра</span>
+                    <ul>
+                      <li><a href="#">Все услуги</a></li>
+                      <li><a href="#">Поиск иностранных партнеров</a></li>
+                      <li><a href="#">Проведение маркетинговых исследований</a></li>
+                      <li><a href="#">Оказание консультационных услуг по любым вопросам ВЭД</a></li>
+                      <li><a href="#">Адаптация компании к международному рынку и модернизации экспортного предложения</a></li>
+                      <li><a href="#">Организация участия в международных выставках и бизнес-миссиях</a></li>
+                      <li><a href="#">Участие в каталоге экспортно-ориентированных предприятий Югры</a></li>
+                      <li><a href="#">Консультации</a></li>
+                      <li><a href="#">Финансовая поддержка</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Экспортеру</a></li>
+                  <li><a href="#">Экспорт в Югре</a></li>
+                  <li><a href="#">РИЦ</a></li>
+                  <li class="parent"><span>Наши проекты</span>
+                    <ul>
+                      <li><a href="#">Пункт 1</a></li>
+                      <li><a href="#">Пункт 2</a></li>
+                      <li><a href="#">Пункт 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Контакты</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Экспортеру</a></li>
-              <li><a href="#">Экспорт в Югре</a></li>
-              <li><a href="#">РИЦ</a></li>
-              <li class="parent"><span>Наши проекты</span>
-                <ul>
-                  <li><a href="#">Пункт 1</a></li>
-                  <li><a href="#">Пункт 2</a></li>
-                  <li><a href="#">Пункт 3</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <nav class="menu sub"></nav>
+              </nav>
+          <nav class="menu sub js-menu-sub"></nav>
           <div class="left-bottom">
             <div class="lang js-lang">RU
               <ul>
                 <li><a href="#">EN</a></li>
                 <li><a href="#">DE</a></li>
               </ul>
-            </div>
-            <div class="phone">8 (3467) 388-400</div>
+            </div><a class="phone" href="#">8 (3467) 388-400</a>
           </div>
         </div>
         <div class="right">
@@ -294,6 +293,56 @@
           </div>
         </div>
       </footer>
+      <div class="mobile">
+            <nav class="menu mobile-menu js-mobile-menu">
+              <ul>
+                <li><a href="#">О центре</a></li>
+                <li class="parent"><span>Услуги центра</span>
+                  <ul>
+                    <li><a href="#">Все услуги</a></li>
+                    <li><a href="#">Поиск иностранных партнеров</a></li>
+                    <li><a href="#">Проведение маркетинговых исследований</a></li>
+                    <li><a href="#">Оказание консультационных услуг по любым вопросам ВЭД</a></li>
+                    <li><a href="#">Адаптация компании к международному рынку и модернизации экспортного предложения</a></li>
+                    <li><a href="#">Организация участия в международных выставках и бизнес-миссиях</a></li>
+                    <li><a href="#">Участие в каталоге экспортно-ориентированных предприятий Югры</a></li>
+                    <li><a href="#">Консультации</a></li>
+                    <li><a href="#">Финансовая поддержка</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Экспортеру</a></li>
+                <li><a href="#">Экспорт в Югре</a></li>
+                <li><a href="#">РИЦ</a></li>
+                <li class="parent"><span>Наши проекты</span>
+                  <ul>
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+        <div class="mobile-bottom">
+          <div class="mobile-flex">
+                <div class="header-social"><a class="header-social__item fb" href="#"></a><a class="header-social__item vk" href="#"></a><a class="header-social__item you" href="#"></a><a class="header-social__item insta" href="#"></a>
+                </div><a class="mail" href="#"></a>
+            <form class="header-search" action="#">
+              <input class="header-search__input" type="text" placeholder="Поиск по сайту...">
+              <button class="header-search__button"></button>
+            </form>
+          </div>
+          <div class="left-bottom">
+            <div class="lang js-lang">RU
+              <ul>
+                <li><a href="#">EN</a></li>
+                <li><a href="#">DE</a></li>
+              </ul>
+            </div><a class="phone" href="#">8 (3467) 388-400</a>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/swiper/swiper.min.js"></script>

@@ -39,10 +39,12 @@ html(lang="ru")
   body
     include mixins/social
     include mixins/breadcrumbs
+    include mixins/menu
 
     .page
       include includes/header
       block content
+      include includes/mobile
 
     each item in js
       script(src=item)

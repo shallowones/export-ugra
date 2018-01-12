@@ -63,6 +63,22 @@ block content
               input(type="text", placeholder="Ваш E-mail").subs__input
               hr
               button.button.full Подписаться на новости
+          .swiper-container.mobile-news
+            .swiper-wrapper
+              each item in news
+                a(style='background-image: url(\'images/' + item.img + '.png\')',
+                href="#").swiper-slide.news__item
+                  .news__item-wrap
+                    .news__item-date 04.12.2017
+                    .news__item-name= item.name
+              form(action="#").swiper-slide.news__item.subs
+                .subs-desc Подпишитесь на нашу новостную рассылку
+                input(type="text", placeholder="Ваш E-mail").subs__input
+                hr
+                button.button.full Подписаться на новости
+            .swiper-button-prev
+            .swiper-button-next
+
           a(href="#").button.full.white Все новости
         .line
           h1.h1 Проекты
@@ -75,6 +91,8 @@ block content
                     .projects-item__img
                       img(src='images/project-' + (index + 1) + '.png')
                     .projects-item__name= item
+            .swiper-button-prev
+            .swiper-button-next
         form(action="#").form.with-head
           .form-head.
             Опрос предпринимателей Ханты-Мансийского автономного округа —

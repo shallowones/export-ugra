@@ -3,8 +3,8 @@
 
     // multiple menu
     {
-      const $menu = $('.menu')
-      const $sub = $('.sub')
+      const $menu = $('.js-menu')
+      const $sub = $('.js-menu-sub')
       const $left = $('.left')
 
       $menu.find('.parent').on('mouseover', (e) => {
@@ -70,11 +70,27 @@
       })
     }
 
+    // main slider
+    {
+      new Swiper('.mobile-news', {
+        slidesPerView: 'auto',
+        autoplay: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      })
+    }
+
     // projects
     {
       new Swiper('.js-projects', {
         slidesPerView: 'auto',
-        autoplay: true
+        autoplay: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
       })
     }
 
@@ -137,7 +153,7 @@
         const $hiddenBlock = $this.parent().find('.hidden-block')
         const $text = $this.find('span')
         const isShow = $this.hasClass(showClass)
-        $this.animate({ opacity: 0 }, duration, () => {
+        $this.animate({opacity: 0}, duration, () => {
           if (isShow) {
             $text.text(
               $hiddenBlock.find('b').text()
@@ -147,7 +163,7 @@
           }
           $this.toggleClass(showClass, !isShow)
           $hiddenBlock.slideToggle(duration)
-          setTimeout(() => { $this.animate({ opacity: 1 }, duration) }, duration)
+          setTimeout(() => { $this.animate({opacity: 1}, duration) }, duration)
         })
       })
     }
@@ -156,6 +172,44 @@
     {
       $('.js-lang').on('click', (e) => {
         $(e.currentTarget).toggleClass('show')
+      })
+    }
+
+    // mobile
+    {
+      const MOBILE_SCREEN_RESOLUTION = 1024
+      const CLASS_ACTIVE = 'active'
+      const CLASS_MOBILE_OPEN = 'mobile-open'
+
+      const $page = $('.page')
+      const $mobile = $('.mobile')
+      const $mobileMenu = $('.mobile-menu')
+      const $mobileMenuParents = $mobileMenu.find('.parent')
+      const $mobileButton = $('.js-mobile')
+
+      $mobileButton.on('click', () => { $page.toggleClass(CLASS_MOBILE_OPEN) })
+
+      $mobileMenuParents.find('span').on('click', (e) => {
+        const $this = $(e.currentTarget)
+        const $parent = $this.parent()
+        const $ul = $parent.find('ul')
+        if ($parent.hasClass(CLASS_ACTIVE)) {
+          $parent.removeClass(CLASS_ACTIVE)
+          $ul.slideUp()
+        } else {
+          $parent.addClass(CLASS_ACTIVE)
+          $ul.slideDown()
+        }
+      })
+
+      $(window).resize((e) => {
+        const width = e.currentTarget.innerWidth
+        if (width > MOBILE_SCREEN_RESOLUTION && $page.hasClass(CLASS_MOBILE_OPEN)) {
+          $page.removeClass(CLASS_MOBILE_OPEN)
+          $mobileMenuParents
+            .find('span').removeClass(CLASS_ACTIVE)
+            .parent().find('ul').removeAttr('style')
+        }
       })
     }
 

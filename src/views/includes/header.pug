@@ -1,9 +1,12 @@
 header.header
   .header-wrapper
+    button(type="button").mobile__button.js-mobile
+      span
+      span
+      span
+      span
     a(href="#").header__logo
     .header-desc Расширяя границы сотрудничества
     a(href="#").header__iso
     +social(true)
-    form(action="#").header-search
-      input(type="text", placeholder="Поиск по сайту...").header-search__input
-      button.header-search__button
+    include header-search
