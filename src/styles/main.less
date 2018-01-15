@@ -23,10 +23,6 @@ html {
   }
 }
 
-body {
-  overflow: hidden;
-}
-
 .page {
   height: 100%;
   min-height: 100vh;
@@ -40,9 +36,12 @@ body {
   -webkit-overflow-scrolling: touch;
 
   &.mobile-open {
+    height: 100%;
     overflow-y: hidden;
 
     & .mobile {
+      clip: rect(auto auto auto auto);
+      clip-path: none;
       opacity: 1;
       z-index: 100;
       visibility: visible;
@@ -78,6 +77,13 @@ body {
         transform: translateY(0);
       }
     }
+  }
+
+  @media @mobile {
+    height: auto;
+    min-height: initial;
+    display: block;
+    overflow-y: hidden;
   }
 }
 
@@ -264,11 +270,10 @@ button {
 
 .header {
   padding-top: 15px;
-  height: 101px;
   position: relative;
 
   &-wrapper {
-    height: 100%;
+    height: 86px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,6 +285,7 @@ button {
     }
 
     @media @plan {
+      height: 60px;
       padding-left: 0;
       justify-content: flex-start;
     }
@@ -345,7 +351,7 @@ button {
       margin-left: auto;
     }
 
-    @media @plan-mini {
+    @media @mobile {
       margin-left: 0;
     }
   }
@@ -467,13 +473,16 @@ button {
 
   @media @plan {
     padding-top: 0;
-    height: 60px;
   }
 }
 
 .main {
   display: flex;
   flex: 1 0 auto;
+
+  @media @mobile {
+    flex: auto;
+  }
 }
 
 .left {
@@ -1117,12 +1126,25 @@ button {
   }
 
   &-head {
-    background: #0074be url('../images/subs.png') no-repeat ~"calc(100% + 75px)" 65%;
+    background-color: #0074be;
     padding: 2.5rem 30% 2.5rem 1.5rem;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 1px solid #dfdfdf;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: -76px;
+      top: -93px;
+      width: 267px;
+      height: 263px;
+      background: url('../images/subs.png') no-repeat center;
+      background-size: 100%;
+    }
 
     @media @plan {
       padding: 1rem 1.5rem;
@@ -1429,7 +1451,6 @@ button {
 .partners {
 
   &__item {
-    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1439,8 +1460,13 @@ button {
     border: 1px solid #dfdfdf;
 
     & > img {
-      max-width: 100%;
-      max-height: 100%;
+      max-width: 135px !important;
+      max-height: 135px;
+
+      @media @mobile {
+        max-width: 160px !important;
+        max-height: 160px;
+      }
     }
 
     &:last-child {
@@ -2299,6 +2325,10 @@ a.pag__item {
   opacity: 0;
   z-index: -1;
   visibility: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
   transition: .3s;
 
   &__button {
