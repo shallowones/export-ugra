@@ -1,6 +1,16 @@
 (function ($, Swiper) {
   $(function () {
 
+    const CLASS_INVALID = 'invalid'
+
+    const CLASS_ACTIVE = 'active'
+
+    const is = ((el) => { return typeof el !== 'undefined' && el.length})
+
+    const $window = $(window)
+
+    const $page = $('.page')
+
     // multiple menu
     {
       const $menu = $('.js-menu')
@@ -9,7 +19,7 @@
 
       $menu.find('.parent').on('mouseover', (e) => {
         const $this = $(e.currentTarget)
-        if (!$this.hasClass('active')) {
+        if (!$this.hasClass(CLASS_ACTIVE)) {
           const $ul = $(e.currentTarget).find('ul')
           if ($sub.hasClass('show')) {
             $sub.stop().animate({
@@ -27,8 +37,8 @@
               .stop().animate({opacity: 1}, 100)
           }
 
-          $menu.find('.parent').removeClass('active')
-          $this.addClass('active')
+          $menu.find('.parent').removeClass(CLASS_ACTIVE)
+          $this.addClass(CLASS_ACTIVE)
         }
       })
 
@@ -44,7 +54,7 @@
                 $sub
                   .removeClass('show')
                   .removeAttr('style')
-                $menu.find('.parent').removeClass('active')
+                $menu.find('.parent').removeClass(CLASS_ACTIVE)
               }, 200)
             })
           }
@@ -139,7 +149,7 @@
     // invalid form controls
     {
       $('.form-control.invalid').find('.form-control__input, .form-control__textarea').focus((e) => {
-        $(e.currentTarget).parent().removeClass('invalid')
+        $(e.currentTarget).parent().removeClass(CLASS_INVALID)
       })
     }
 
@@ -178,11 +188,8 @@
     // mobile
     {
       const MOBILE_SCREEN_RESOLUTION = 1024
-      const CLASS_ACTIVE = 'active'
       const CLASS_MOBILE_OPEN = 'mobile-open'
 
-      const $page = $('.page')
-      const $mobile = $('.mobile')
       const $mobileMenu = $('.mobile-menu')
       const $mobileMenuParents = $mobileMenu.find('.parent')
       const $mobileButton = $('.js-mobile')
@@ -202,7 +209,7 @@
         }
       })
 
-      $(window).resize((e) => {
+      $window.resize((e) => {
         const width = e.currentTarget.innerWidth
         if (width > MOBILE_SCREEN_RESOLUTION && $page.hasClass(CLASS_MOBILE_OPEN)) {
           $page.removeClass(CLASS_MOBILE_OPEN)
@@ -210,6 +217,62 @@
             .find('span').removeClass(CLASS_ACTIVE)
             .parent().find('ul').removeAttr('style')
         }
+      })
+    }
+
+    // fixed left menu
+    {
+      const MENU_FIXED_CLASS = 'menu-fixed'
+
+      const $main = $page.find('.main')
+      const offsetTop = $main.offset().top
+
+      $page.scroll((e) => {
+        const scrollTop = e.target.scrollTop
+        $main.toggleClass(MENU_FIXED_CLASS, scrollTop >= offsetTop)
+      })
+    }
+
+    // custom select
+    {
+      $page.find('.js-select').each((index, el) => {
+        const $this = $(el)
+        const $parent = $this.parent()
+        const dataPlaceholder = $this.data('placeholder')
+
+        let params = { includeValue: true }
+        if (is(dataPlaceholder)) {
+          params.placeholder = $('<span/>', {
+            class: 'gray',
+            text: dataPlaceholder
+          })
+        }
+        $this.customSelect(params)
+
+        if ($parent.hasClass(CLASS_INVALID)) {
+          $parent.find('.custom-select > .custom-select__option').on('click', () => {
+            $parent.removeClass(CLASS_INVALID)
+          })
+        }
+      })
+    }
+
+    // industry buttons
+    {
+      $('.js-industry').on('click', (e) => {
+        const $this = $(e.currentTarget)
+        const isActive = $this.hasClass(CLASS_ACTIVE)
+
+        if (isActive) {
+          $this.parent().find('input[type=hidden][value=' + $this.val() + ']').remove()
+        } else {
+          $('<input/>', {
+            type: 'hidden',
+            value: $this.val(),
+            name: $this.data('hidden-name')
+          }).insertAfter($this)
+        }
+        $this.toggleClass(CLASS_ACTIVE, !isActive)
       })
     }
 

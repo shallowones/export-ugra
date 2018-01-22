@@ -8,6 +8,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="fonts/bundle.css">
     <link rel="stylesheet" href="js/vendor/swiper/swiper.min.css">
+    <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/vendor/custom-select/jquery.custom-select.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -189,6 +191,42 @@
                     <input class="form-control__input" type="text" placeholder="Компания" value="ООО Рога и Копыта">
                   </div>
                 </div>
+                <div class="form-flex">
+                  <div class="form-control">
+                    <select class="form-control__select js-select" data-placeholder="Город">
+                      <option value="1">Санкт-Петербург</option>
+                      <option value="2">Ханты-Мансийск</option>
+                      <option value="3">Новосибирск</option>
+                      <option value="4">Шулдинск</option>
+                      <option value="5">Антоновск</option>
+                    </select>
+                  </div>
+                  <div class="form-control invalid">
+                    <select class="form-control__select js-select" data-placeholder="Город">
+                      <option value="1">Санкт-Петербург</option>
+                      <option value="2">Ханты-Мансийск</option>
+                      <option value="3">Новосибирск</option>
+                      <option value="4">Шулдинск</option>
+                      <option value="5">Антоновск</option>
+                    </select><i class="err">Заполните</i>
+                  </div>
+                </div>
+                <div class="form-flex">
+                  <div class="form-control">
+                    <input class="form-control__input" type="text" placeholder="Наименование предприятия">
+                  </div>
+                  <!-- написал для программиста js-логику:-->
+                  <!-- если ты нажмешь на кнопку, то увидишь, что появится input[type="hidden"]-->
+                  <!-- с атрибутами value и name такими же, какие указаны у тебя в атрибутах value и data-hidden-name на кнопке соответственно-->
+                  <div class="form-control form-flex">
+                    <button class="industry industry-1 js-industry" type="button" title="Инновационная сфера" value="1" data-hidden-name="INDUSTRY[]"></button>
+                    <button class="industry industry-2 js-industry" type="button" title="Продукция агропромышленного комплекса" value="2" data-hidden-name="INDUSTRY[]"></button>
+                    <button class="industry industry-3 js-industry" type="button" title="Продукция лесопромышленного комплекса" value="3" data-hidden-name="INDUSTRY[]"></button>
+                    <button class="industry industry-4 js-industry" type="button" title="Строительные и отделочные материалы" value="4" data-hidden-name="INDUSTRY[]"></button>
+                    <button class="industry industry-5 js-industry" type="button" title="Сфера туризма" value="5" data-hidden-name="INDUSTRY[]"></button>
+                    <button class="industry industry-6 js-industry" type="button" title="Традиционное хозяйствование малочисленных народов севера и сувенирная продукция" value="6" data-hidden-name="INDUSTRY[]"></button>
+                  </div>
+                </div>
                 <div class="form-control">
                   <textarea class="form-control__textarea" placeholder="Напишите Ваше сообщение"></textarea>
                 </div><br>
@@ -346,6 +384,8 @@
     </div>
     <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/swiper/swiper.min.js"></script>
+    <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/vendor/custom-select/jquery.custom-select.min.js"></script>
     <script src="js/app/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+extends layout
+
+block content
+
+  -
+    var links = [
+      {
+        img: 'link-1.png',
+        name: 'Единый официальный сайт государственных органов ХМАО-Югры',
+        href: 'admhmao.ru'
+      },
+      {
+        img: 'link-2.png',
+        name: 'Фонд поддержки предпринимательства Югры',
+        href: 'sb-ugra.ru'
+      },
+      {
+        img: 'link-3.png',
+        name: 'Фонд микрофинансирования Югры',
+        href: 'undmicro86.ru'
+      }
+    ]
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Новости', 'Товарооборот между Россией и Словакией вырос почти на треть')
+      .detail.wrapper
+        .links
+          each count in [1, 2]
+            each item in links
+              a(href=item.href).links-item
+                .links-item-left
+                  img(src='images/' + item.img).links-item__img
+                .links-item-right
+                  .links-item__name= item.name
+                  .links-item__href= item.href + '/'
+        .center
+          // добавить атрибут disabled во время ajax-запроса
+          button(type="button", disabled).button.load Показать еще 13
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap

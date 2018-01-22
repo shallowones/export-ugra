@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  -
+    var media = [
+      'media-1.jpg',
+      'media-2.jpg',
+      'media-3.jpg',
+      'media-4.jpg',
+      'media-5.jpg'
+    ]
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Новости', 'Товарооборот между Россией и Словакией вырос почти на треть')
+      .detail.wrapper
+        .media.inner
+          each count in [1, 2]
+            each item in media
+              a(href='images/' + item, data-fancybox="group").media__item
+                .media__img(style='background-image: url(images/' + item + ')')
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap

@@ -27,6 +27,15 @@ block content
       }
     ]
 
+    var buttons = [
+      'Инновационная сфера',
+      'Продукция агропромышленного комплекса',
+      'Продукция лесопромышленного комплекса',
+      'Строительные и отделочные материалы',
+      'Сфера туризма',
+      'Традиционное хозяйствование малочисленных народов севера и сувенирная продукция'
+    ]
+
   main.main
     include includes/left
     .right
@@ -121,6 +130,38 @@ block content
                 i.err Заполните
               .form-control
                 input(type="text", placeholder="Компания", value="ООО Рога и Копыта").form-control__input
+            .form-flex
+              .form-control
+                select(data-placeholder="Город").form-control__select.js-select
+                  option(value="1") Санкт-Петербург
+                  option(value="2") Ханты-Мансийск
+                  option(value="3") Новосибирск
+                  option(value="4") Шулдинск
+                  option(value="5") Антоновск
+              .form-control.invalid
+                select(data-placeholder="Город").form-control__select.js-select
+                  option(value="1") Санкт-Петербург
+                  option(value="2") Ханты-Мансийск
+                  option(value="3") Новосибирск
+                  option(value="4") Шулдинск
+                  option(value="5") Антоновск
+                i.err Заполните
+            .form-flex
+              .form-control
+                input(type="text", placeholder="Наименование предприятия").form-control__input
+              // написал для программиста js-логику:
+              // если ты нажмешь на кнопку, то увидишь, что появится input[type="hidden"]
+              // с атрибутами value и name такими же, какие указаны у тебя в атрибутах value и data-hidden-name на кнопке соответственно
+              .form-control.form-flex
+                each item, index in buttons
+                  - var count = index + 1
+                  button(
+                    type="button",
+                    title=item,
+                    value=count,
+                    class='industry ' + 'industry-' + count + ' js-industry',
+                    data-hidden-name="INDUSTRY[]"
+                  )
             .form-control
               textarea(placeholder="Напишите Ваше сообщение").form-control__textarea
             br

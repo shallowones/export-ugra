@@ -1,0 +1,64 @@
+extends layout
+
+block content
+
+  -
+    var media = [
+      {
+        name: 'Круглый стол «Сделано в Югре!» - визитная карточка предпринимателей Югры» 26 октября 2017 г., г. Нижневартовск',
+        photo: 'media-1.jpg',
+        date: '27 Октября 2017',
+        photoCount: 33
+      },
+      {
+        name: 'Югорский рыбный фестиваль 2016',
+        photo: 'media-2.jpg',
+        date: '18 Марта 2016',
+        photoCount: 9
+      },
+      {
+        name: 'Выставка окружных товаропроизводителей «Товары земли Югорской 2015»',
+        photo: 'media-3.jpg',
+        date: '16 Декабря 2015',
+        photoCount: 20
+      },
+      {
+        name: 'Деловая миссия в Индию 18-22 ноября 2015 года',
+        photo: 'media-4.jpg',
+        date: '15 Декабря 2015',
+        photoCount: 18
+      },
+      {
+        name: 'Семинар по тематике ВЭД г. Нижневартовск',
+        photo: 'media-5.jpg',
+        date: '19 Декабря 2015',
+        photoCount: 10
+      },
+      {
+        name: '[Заглушка] Семинар по тематике ВЭД г. Нягань',
+        photo: 'no-photo.jpg',
+        date: '17 Ноября 2015',
+        photoCount: 5
+      }
+    ]
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Новости', 'Товарооборот между Россией и Словакией вырос почти на треть')
+      .detail.wrapper
+        .media
+          each item in media
+            a(href="#", data-fancybox).media__item
+              .media-top
+                .media__date= item.date
+                .media__photo= item.photoCount
+              .media__img(style='background-image: url(images/' + item.photo + ')')
+              .media__name= item.name
+        .center
+          // добавить атрибут disabled во время ajax-запроса
+          button(type="button", disabled).button.load Показать еще 51
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap
