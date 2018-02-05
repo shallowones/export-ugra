@@ -29,8 +29,8 @@ block content
     var projects = [
       'Сделано в Югре!',
       'Образовательный проект РЭЦ',
-      'Запросы от иностранных компаний',
-      'Экспортный бюллетень'
+      'Запросы от иностранных компаний'
+      //'Экспортный бюллетень'
     ]
 
   main.main
@@ -83,14 +83,19 @@ block content
         .line
           h1.h1 Проекты
         .projects-block
+          .projects.projects-desktop
+            each item, index in projects
+              a(href="#").projects-item
+                .projects-item__img
+                  img(src='images/project-' + (index + 1) + '.png')
+                .projects-item__name= item
           .swiper-container.projects.js-projects
             .swiper-wrapper
-              each count in [1, 2]
-                each item, index in projects
-                  a(href="#").swiper-slide.projects-item
-                    .projects-item__img
-                      img(src='images/project-' + (index + 1) + '.png')
-                    .projects-item__name= item
+              each item, index in projects
+                a(href="#").swiper-slide.projects-item
+                  .projects-item__img
+                    img(src='images/project-' + (index + 1) + '.png')
+                  .projects-item__name= item
             .swiper-button-prev
             .swiper-button-next
         form(action="#").form.with-head
