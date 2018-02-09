@@ -1,0 +1,35 @@
+extends layout
+
+block content
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'О центре', 'Отчеты о мероприятиях')
+      .detail.wrapper
+        h2.h2 Отчеты о мероприятиях
+        .links.reports
+          a(href="#").links-item
+            .links-item-left
+              img(src="images/report-1.jpg")
+            .links-item-right
+              .links-item__date 02 Октября 2017
+              .links-item__name Итоги деловой миссии в Южную Корею, г. Сеул 17-19 августа 2017 года
+          a(href="#").links-item
+            .links-item-left
+              img(src="images/report-2.png")
+            .links-item-right
+              .links-item__date 18 Мая 2017
+              .links-item__name Итоги деловой миссии в Китай, г. Шанхай 07-11 мая 2017 года
+          a(href="#").links-item
+            .links-item-left
+              img(src="images/report-3.png")
+            .links-item-right
+              .links-item__date 18 Мая 2017
+              .links-item__name Итоги деловой миссии в Германию c 8 по 12 мая 2017 года
+          .center.load-more
+            button(type="button").button.load Показать еще
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap

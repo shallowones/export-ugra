@@ -1,0 +1,74 @@
+extends layout
+
+block content
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Контакты')
+      .detail.wrapper
+        h2.h2 Контакты
+        .wrapper-min.biggest
+          h4.h4.no-mar Почтовый адрес:
+          p 628012, г. Ханты-Мансийск, ул. Студенческая, дом 27, офис 401
+          h4.h4.no-mar Время работы:
+          p пн - пт: с 9:00 до 18:00,<br>перерыв на обед с 13:00 до 14:00<br>сб - вс: выходной
+          p <b>Телефон / Факс:</b> <a href="tel:8(3467)388-400">8 (3467) 388-400</a>
+          p <b>E-mail:</b> <a href="mailto:info@export-ugra.ru">info@export-ugra.ru</a>
+        table.table
+          tbody
+            tr
+              th Ф.И.О.
+              th ДОЛЖНОСТЬ
+              th EMAIL
+              th ТЕЛЕФОН
+            tr
+              td ГАЙЧЕНЦЕВА<br>Ирина Александровна
+              td Генеральный директор
+              td.nowrap <a href="mailto:gia@export-ugra.ru">gia@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388400">8 (3467) 388-400</a>
+            tr
+              td ЛЯХОВИЧ<br>Александр Николаевич
+              td Начальник отдела правового сопровождения проектов
+              td.nowrap <a href="mailto:lan@export-ugra.ru">lan@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388400">8 (3467) 388-400</a>
+            tr
+              td ДУДНИЧЕНКО<br>Оксана Владимировна
+              td Бухгалтер
+              td.nowrap <a href="mailto:dov@export-ugra.ru">dov@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388400">8 (3467) 388-400</a>
+            tr
+              td ВЕКШИНА<br>Ирина Александровна
+              td Главный специалист отдела правового сопровождения проектов
+              td.nowrap <a href="mailto:via@export-ugra.ru">via@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388-400">8 (3467) 388-400</a>
+            tr
+              td ЗЕМЛИХАНОВ<br>Вадим Мударисович
+              td Начальник отдела координации внешних связей и маркетинга
+              td.nowrap <a href="mailto:zvm@export-ugra.ru">zvm@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388401">8 (3467) 388-401</a>
+            tr
+              td ЧЕБАКОВ<br>Виктор Леонидович
+              td Главный специалист отдела координации внешних связей и маркетинга
+              td.nowrap <a href="mailto:cvl@export-ugra.ru">cvl@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388401">8 (3467) 388-401</a>
+            tr
+              td КАЛИНИН<br>Иван Дмитриевич
+              td Главный специалист отдела координации внешних связей и маркетинга
+              td.nowrap <a href="mailto:kid@export-ugra.ru">kid@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388402">8 (3467) 388-402</a>
+            tr
+              td АНДРЕЕВА<br>Дина Александровна
+              td Главный специалист отдела правового сопровождения проектов
+              td.nowrap <a href="mailto:ada@export-ugra.ru">ada@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388402">8 (3467) 388-402</a>
+            tr
+              td ИШМАЕВ<br>Айдар Римович
+              td Главный специалист отдела координации внешних связей и маркетинга
+              td.nowrap <a href="mailto:iar@export-ugra.ru">iar@export-ugra.ru</a>
+              td.nowrap <a href="tel:83467388401">8 (3467) 388-401</a>
+
+        include includes/partners
+  footer.footer
+    include includes/footer-sub
+    include includes/footer-wrap
