@@ -77,6 +77,10 @@ html {
         transform: translateY(0);
       }
     }
+
+    & .bx-panel {
+      display: none;
+    }
   }
 
   @media @mobile {
@@ -780,10 +784,12 @@ button {
         }
 
         & .h1 {
+          max-width: 70%;
 
           @media @plan-mini {
             font-size: 1.5rem;
             line-height: 2rem;
+            max-width: 100%;
           }
         }
 
@@ -895,6 +901,7 @@ button {
     padding-right: 3rem;
     margin-bottom: 0;
     position: relative;
+    white-space: nowrap;
 
     @media @plan-mini {
       padding-right: 2rem;
@@ -975,9 +982,114 @@ button {
       text-decoration: underline;
     }
 
+    &-still {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #fff;
+      font-weight: bold;
+      background-color: rgba(253, 128, 0, 0.7);
+      padding: .5rem 1.5rem;
+      display: inline-block;
+      vertical-align: top;
+    }
+
     @media @desktop-mini {
       margin-right: 10px;
       max-width: ~"calc(50% - 10px)";
+    }
+  }
+
+  &-detail {
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      &-left {
+        width: 300px;
+        height: 200px;
+        background: no-repeat center;
+        background-size: cover;
+
+        @media @plan-mini {
+          width: 50%;
+          max-width: 300px;
+        }
+
+        @media @mobile {
+          width: 100%;
+          margin: 0 auto 1rem;
+        }
+      }
+
+      &-right {
+        width: ~"calc(100% - 330px)";
+
+        @media @plan-mini {
+          width: 50%;
+          padding-left: 30px;
+        }
+
+        @media @mobile {
+          width: 100%;
+          padding-left: 0;
+          text-align: center;
+        }
+      }
+
+      &-date {
+        color: #999;
+        font-size: 14px;
+        line-height: 1rem;
+        margin-bottom: .5rem;
+      }
+
+      & .h4 {
+        margin-bottom: .5rem;
+        transition: color .3s;
+      }
+
+      & p {
+        margin: 0;
+      }
+
+      &:hover .h4 {
+        color: #0074be;
+      }
+
+      &-still {
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(239, 124, 7);
+        padding: .5rem 1rem;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        margin-bottom: .5rem;
+      }
+
+      @media @mobile {
+        display: block;
+      }
+    }
+
+    &.inner {
+
+      & p[style] {
+        font-family: inherit !important;
+        font-size: 14px !important;
+        line-height: 1.5rem !important;
+        background: none !important;
+        margin: 0 0 1rem !important;
+      }
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -2777,7 +2889,7 @@ a.pag__item {
   }
 
   & .phone {
-    width: ~"calc(100% - 100px)";
+    width: ~"calc(100% - 104px)";
     white-space: nowrap;
     transition: .3s;
   }
@@ -3188,88 +3300,6 @@ a.pag__item {
   }
 }
 
-.news-detail {
-
-  &__item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 2rem;
-
-    &-left {
-      width: 300px;
-      height: 200px;
-      background: no-repeat center;
-      background-size: cover;
-
-      @media @plan-mini {
-        width: 50%;
-        max-width: 300px;
-      }
-
-      @media @mobile {
-        width: 100%;
-        margin: 0 auto 1rem;
-      }
-    }
-
-    &-right {
-      width: ~"calc(100% - 330px)";
-
-      @media @plan-mini {
-        width: 50%;
-        padding-left: 30px;
-      }
-
-      @media @mobile {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-      }
-    }
-
-    &-date {
-      color: #999;
-      font-size: 14px;
-      line-height: 1rem;
-      margin-bottom: .5rem;
-    }
-
-    & .h4 {
-      margin-bottom: .5rem;
-      transition: color .3s;
-    }
-
-    & p {
-      margin: 0;
-    }
-
-    &:hover .h4 {
-      color: #0074be;
-    }
-
-    @media @mobile {
-      display: block;
-    }
-  }
-
-  &.inner {
-
-    & p[style] {
-      font-family: inherit !important;
-      font-size: 14px !important;
-      line-height: 1.5rem !important;
-      background: none !important;
-      margin: 0 0 1rem !important;
-    }
-
-    & img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-}
-
 .video {
   text-align: center;
   padding: 1rem 0;
@@ -3296,4 +3326,20 @@ a.pag__item {
     font-size: inherit;
     margin-bottom: 0;
   }
+}
+
+.bx-panel {
+  position: relative;
+
+  & > #bx-panel.bx-panel-fixed {
+    position: absolute !important;
+  }
+
+  @media @mobile {
+    display: none;
+  }
+}
+
+.display-none {
+  display: none;
 }

@@ -54,8 +54,8 @@ block content
         .news-block
           .news
             each item in news
-              a(style='background-image: url(\'images/' + item.img + '.png\')',
-              href="#").news__item
+              a(style='background-image: url(\'images/' + item.img + '.png\')', href="#").news__item
+                .news__item-still Закреплено
                 .news__item-wrap
                   .news__item-date 04.12.2017
                   .news__item-name= item.name
