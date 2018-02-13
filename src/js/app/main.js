@@ -176,6 +176,12 @@
           setTimeout(() => { $this.animate({opacity: 1}, duration) }, duration)
         })
       })
+
+      $('.js-latent').on('click', (e) => {
+        const $this = $(e.currentTarget)
+        const $hiddenBlock = $this.parent().find('.latent-block')
+        $hiddenBlock.slideToggle(duration)
+      })
     }
 
     // lang

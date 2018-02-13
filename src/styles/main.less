@@ -1134,6 +1134,13 @@ button {
     opacity: .2;
   }
 
+  & .button {
+
+    @media @mobile {
+      margin-top: 2rem;
+    }
+  }
+
   @media @plan-mini {
     padding: 2rem 1rem 1rem;
   }
@@ -2158,6 +2165,38 @@ a.breadcrumbs__item {
         background-color: #008cd3;
       }
     }
+
+    &.no-marker {
+      padding-left: 0;
+
+      & > li {
+        padding-left: 0;
+
+        & > span {
+          margin-right: 1.5rem;
+          color: #008cd3;
+        }
+
+        &:before {
+          display: none;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &.sublist {
+      margin: .5rem 0 0 2rem;
+
+      & > li {
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   & .h3, & .h4, & .button {
@@ -2402,6 +2441,10 @@ a.breadcrumbs__item {
     &:before {
       background-image: data-uri('../images/svg/pdf.svg');
     }
+  }
+
+  &.min-mar {
+    margin-bottom: 1rem;
   }
 
   @media @plan {
@@ -3007,6 +3050,27 @@ a.pag__item {
       }
     }
 
+    &.vid {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: data-uri('../images/svg/video.svg') no-repeat center;
+        background-size: 70px;
+        opacity: .7;
+        transition: opacity .3s;
+      }
+
+      &:hover:before {
+        opacity: 1;
+      }
+    }
+
     @media @plan {
       width: ~"calc(50% - 2rem)";
     }
@@ -3342,4 +3406,74 @@ a.pag__item {
 
 .display-none {
   display: none;
+}
+
+.with-flag {
+  display: flex;
+  align-items: center;
+
+  & img {
+    display: block;
+    margin-right: 10px;
+
+    @media @mobile {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media @mobile {
+    display: block;
+  }
+}
+
+.latent {
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: 1rem;
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    border: none;
+    background: transparent;
+    outline: none;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 1px;
+      background-color: #dfdfdf;
+    }
+  }
+
+  &-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+
+    & > img {
+      max-height: 100%;
+    }
+  }
+
+  &-block {
+    display: none;
+    padding: 1.5rem 1rem;
+  }
+
+  & .file:last-child {
+    margin-bottom: 0;
+  }
 }
