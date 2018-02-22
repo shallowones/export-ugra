@@ -1,0 +1,21 @@
+extends layout
+
+block content
+
+  main.main
+    include includes/left
+    .right
+      +breadcrumbs('Главная', 'Страница не найдена')
+      .detail.wrapper
+        h2.h2 Страница не найдена
+        .center
+          .not-found
+            | 4
+            .not-found__zero
+            | 4
+          p.
+            Страница, которую Вы ищете, не существует или была перемещена.<br>
+            Попробуйте воспользоваться поиском или <a href="#">вернитесь на главную страницу</a>.
+        include includes/partners
+  footer.footer
+    include includes/footer-wrap

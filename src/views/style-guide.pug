@@ -114,6 +114,8 @@ block content
             span 15 mb, pdf
           a(href="file.zip").file Порядок оказания поддержки экспортно-ориентированным СМСП Югры
             span 15 mb, zip
+          a(href="file.jpg").file Порядок оказания поддержки экспортно-ориентированным СМСП Югры
+            span 15 mb, jpg
           br
           br
           h3.h3 Написать нам
@@ -159,7 +161,7 @@ block content
                     type="button",
                     title=item,
                     value=count,
-                    class='industry ' + 'industry-' + count + ' js-industry',
+                    class='industry ' + 'industry' + count + ' js-industry',
                     data-hidden-name="INDUSTRY[]"
                   )
             .form-control
@@ -222,10 +224,9 @@ block content
             .latent-block
               a(href="file.docx").file Заявка на оказание информационно-консультационной поддержки
           .latent
-            button(type="button").latent__button.js-latent
+            button(type="button").latent__button.with-number.js-latent
               span Предконтрактная подготовка
-              .latent-img
-                img(src="images/latent-2.png")
+              span.number 1
             .latent-block
               ul.no-marker
                 li

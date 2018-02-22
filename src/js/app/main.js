@@ -282,5 +282,29 @@
       })
     }
 
+    // on scroll page
+    {
+      const $scrollButton = $('.js-arrow-top')
+      const pixels = 200
+      const scrollButtonAnimate = (opacity) => {
+        $scrollButton.stop().animate({ opacity }, 200)
+      }
+      $page.scroll((e) => {
+        const $this = $(e.currentTarget)
+        const opacity = +($this.scrollTop() > pixels)
+        scrollButtonAnimate(opacity)
+      })
+      // если перезагрузили страницу, но скролл ниже 200 пикселей, то показываем значек сразу
+      if ($page.scrollTop() > pixels) {
+        scrollButtonAnimate(1)
+      }
+      // событие на клик по значку НАВЕРХ
+      $scrollButton.on('click', () => {
+        if (parseInt($scrollButton.css('opacity'), 10)) {
+          $page.animate({scrollTop: 0}, 600)
+        }
+      })
+    }
+
   })
 })(jQuery, Swiper)
